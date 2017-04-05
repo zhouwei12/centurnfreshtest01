@@ -1,0 +1,2117 @@
+<!doctype html>
+<html>
+<head><title>
+	百鲜网
+</title>
+
+<!-- <script src="/Resource/Jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+ <script src="/Resource/Jquery/validate/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/Lang/cn.js" type="text/javascript"></script>
+
+<script src="/Resource/Common/lib.js" type="text/javascript"></script>
+
+<script src="/Resource/Common/ad.js" type="text/javascript"></script>
+<script src="/Resource/Common/web.js?lang=" id="web_lang" type="text/javascript"></script>
+
+<script src="../Trader/js/jquery.Imgrotation.js" type="text/javascript"></script>
+ 
+<script src="/Resource/Common/user.js" type="text/javascript"></script>
+
+<script src="/Resource/Common/common.js" type="text/javascript"></script>
+<script src="/Resource/Common/area.js" type="text/javascript"></script> -->
+<link rel="bookmark" href="/favicon.ico"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="stylesheet" href="css/public.css" />
+
+
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/page.css" />
+<link rel="stylesheet" href="css/banner.css" />
+<link rel="stylesheet" href="css/tab.css" />
+<link rel="stylesheet" href="css/table.css" />
+<link rel="stylesheet" href="css/select.css" />
+<link rel="stylesheet" href="css/forum.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/font-awesome-ie7.css" />
+<link href="css/hq.css" rel="stylesheet" />
+<!--[if lt IE 10]>
+    <script src="/js/html5shiv.min.js"></script>
+    <![endif]-->
+<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="/js/global.js"></script>
+<script src="/js/hq.js"></script>
+<script type="text/javascript" src="/js/jquery.accordion.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            // 首页
+            $('.pro-all').unbind("click");
+
+
+        });
+    </script>
+<meta id="ctl00_keywords" name="keywords" content="百鲜网" /><meta id="ctl00_description" name="description" itemprop="description" content="百鲜网" /></head>
+<body>
+    
+    
+
+<div class="top">
+    <div class="container">
+        <div class="top-left">
+          
+               <p>欢迎来到百鲜网</p>
+            <a href="user.aspx?action=login">请登录</a> <span>|</span>
+            <a href="user.aspx?action=register">免费注册</a>
+            
+           
+           
+        </div>
+        <div class="top-right">
+            <ul>           
+
+                <li><a href="bangzhuzhongxin.html">帮助中心&nbsp;&nbsp;|</a></li>
+                
+                <li><a href="lianxikefu.html">联系客服&nbsp;&nbsp;|</a></li>
+                <li><a href="wangzhandaohang.html">网站导航&nbsp;&nbsp;|</a></li>
+                <li><a href="javascript:;" style=" cursor:default">客服热线：<span>400-881-6229</span>&nbsp;&nbsp;|</a></li>
+            </ul>
+            <div class="attention">
+                <p>关注我们：</p>
+                <a class="weixin" href="javascript:;">
+                    <img src="images/top-icon01.png" alt=""/>
+                    <div class="weixin-erweima">
+                        <i></i>
+                        <img src="images/weixing.jpg" alt=""/>
+                    </div>
+                </a>    
+             <a class="weixin" href="javascript:;">
+                    <img src="images/top-icon02.png" alt=""/>
+                    <div class="weixin-erweima">
+                        <i></i>
+                        <img src="images/xlewm.png" alt=""/>
+                    </div>
+                </a>  
+                 <a class="weixin" href="javascript:;">
+                    <img src="images/androidlogo.png" alt=""/>
+                    <div class="weixin-erweima">
+                        <i></i>
+                        <img src="/Files/AndroIDAPP/二维码新_7167.bmp" alt=""/>
+                    </div>
+                </a>
+
+            
+                <span>|</span>
+            </div>
+         
+               <a class="version"  href="/en/" title="English">English</a>
+            </div>
+    </div>
+</div>
+
+<header>
+    <div class="container">
+         <a href="index.html" class="logo">
+           <img src="images/logo.png" alt=""/>
+         </a>
+        <div class="search">
+        <form id="seachform" action="sousuo.html" method="post">
+            <div class="search-form">
+                <div class="input"><input type="text" name="ProSearchKey" id="ProSearchKey" value="" placeholder="多个搜索条件用空格分开" /></div>
+               
+                <div class="button">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <div class="search-list">
+           <a href="javascript:void(0)"  title="A级 牛排"  class="">A级 牛排</a><span>|</span><a href="javascript:void(0)"  title="冷冻三文鱼"  class="">冷冻三文鱼</a><span>|</span><a href="javascript:void(0)"  title="澳洲 羊腿"  class="">澳洲 羊腿</a><span>|</span><a href="javascript:void(0)"  title="猪排骨"  class="">猪排骨</a><span>|</span><a href="javascript:void(0)"  title="进口红虾"  class="">进口红虾</a>
+               
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $(".search-list a").click(function () {
+                        var con = $(this).html();
+                        $("#ProSearchKey").val(con);
+                        $("#seachform").submit();
+
+                    });
+
+                })
+            
+            </script>
+            </form>
+        </div>
+        <div class="cart" onclick="javascript:location.href='user.aspx?action=cart'"> 
+         购物车中<span id="CartCount"></span>件
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <dl>
+            <dt>
+                <a class="pro-all" href="javascript:;">商品全部分类&nbsp;&nbsp;<i class="fa fa-sort-desc fa-caret-up"></i></a>
+                <ul>
+<li class="pro-sort">
+<div class="sort-first">
+<i class="fa fa-caret-right"></i>
+<a class="tit" href="sousuo.html?ProductClassID=1">禽类</a>
+<div class="con">
+<a href="sousuo.html?ProductClassID=6">鸡</a>
+<a href="sousuo.html?ProductClassID=7">鸭</a>
+<a href="sousuo.html?ProductClassID=398">鹅</a>
+</div>
+</div>
+<div class="sort-second">
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=6">鸡<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=117">整鸡</a>
+<span>|</span><a href="sousuo.html?ProductClassID=64">鸡翅</a>
+<span>|</span><a href="sousuo.html?ProductClassID=118">中翅</a>
+<span>|</span><a href="sousuo.html?ProductClassID=119">翅尖</a>
+<span>|</span><a href="sousuo.html?ProductClassID=63">鸡腿</a>
+<span>|</span><a href="sousuo.html?ProductClassID=120">琵琶腿</a>
+<span>|</span><a href="sousuo.html?ProductClassID=65">鸡爪</a>
+<span>|</span><a href="sousuo.html?ProductClassID=121">鸡胸肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=67">鸡胗</a>
+<span>|</span><a href="sousuo.html?ProductClassID=122">鸡心</a>
+<span>|</span><a href="sousuo.html?ProductClassID=68">鸡架</a>
+<span>|</span><a href="sousuo.html?ProductClassID=66">鸡软骨</a>
+<span>|</span><a href="sousuo.html?ProductClassID=415">鸡脖</a>
+<span>|</span><a href="sousuo.html?ProductClassID=416">鸡肾</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=7">鸭<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=123">整鸭</a>
+<span>|</span><a href="sousuo.html?ProductClassID=71">鸭翅</a>
+<span>|</span><a href="sousuo.html?ProductClassID=72">鸭腿</a>
+<span>|</span><a href="sousuo.html?ProductClassID=73">鸭掌</a>
+<span>|</span><a href="sousuo.html?ProductClassID=70">鸭胸肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=69">鸭胗</a>
+<span>|</span><a href="sousuo.html?ProductClassID=74">鸭头</a>
+<span>|</span><a href="sousuo.html?ProductClassID=124">鸭舌</a>
+<span>|</span><a href="sousuo.html?ProductClassID=102">鸭脖</a>
+<span>|</span><a href="sousuo.html?ProductClassID=125">鸭心</a>
+<span>|</span><a href="sousuo.html?ProductClassID=417">半鸭</a>
+<span>|</span><a href="sousuo.html?ProductClassID=418">鸭锁骨</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=398">鹅<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=402">白条鹅</a>
+</div>
+</div>
+<a class="second-add" href="#"><img src="/Files/ProductAd/sort-add01.jpg" alt=""/></a>
+</div>
+</li>
+<li class="pro-sort">
+<div class="sort-first">
+<i class="fa fa-caret-right"></i>
+<a class="tit" href="sousuo.html?ProductClassID=116">畜类</a>
+<div class="con">
+<a href="sousuo.html?ProductClassID=2">猪</a>
+<a href="sousuo.html?ProductClassID=4">牛</a>
+<a href="sousuo.html?ProductClassID=5">羊</a>
+</div>
+</div>
+<div class="sort-second">
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=2">猪<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=11">排骨</a>
+<span>|</span><a href="sousuo.html?ProductClassID=3">脊骨</a>
+<span>|</span><a href="sousuo.html?ProductClassID=44">筒骨</a>
+<span>|</span><a href="sousuo.html?ProductClassID=126">猪肘</a>
+<span>|</span><a href="sousuo.html?ProductClassID=49">猪蹄</a>
+<span>|</span><a href="sousuo.html?ProductClassID=127">猪脚</a>
+<span>|</span><a href="sousuo.html?ProductClassID=46">五花肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=10">瘦肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=128">猪大肠</a>
+<span>|</span><a href="sousuo.html?ProductClassID=129">猪腰</a>
+<span>|</span><a href="sousuo.html?ProductClassID=130">猪心</a>
+<span>|</span><a href="sousuo.html?ProductClassID=131">猪舌</a>
+<span>|</span><a href="sousuo.html?ProductClassID=132">猪头</a>
+<span>|</span><a href="sousuo.html?ProductClassID=133">猪头皮</a>
+<span>|</span><a href="sousuo.html?ProductClassID=48">猪耳朵</a>
+<span>|</span><a href="sousuo.html?ProductClassID=12">猪肚</a>
+<span>|</span><a href="sousuo.html?ProductClassID=134">猪脑</a>
+<span>|</span><a href="sousuo.html?ProductClassID=47">猪尾巴</a>
+<span>|</span><a href="sousuo.html?ProductClassID=45">挂板油</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=4">牛<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=135">牛肩肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=136">牛黄瓜条</a>
+<span>|</span><a href="sousuo.html?ProductClassID=52">牛仔骨</a>
+<span>|</span><a href="sousuo.html?ProductClassID=55">牛腩</a>
+<span>|</span><a href="sousuo.html?ProductClassID=54">牛腱</a>
+<span>|</span><a href="sousuo.html?ProductClassID=137">牛柳</a>
+<span>|</span><a href="sousuo.html?ProductClassID=138">牛肠</a>
+<span>|</span><a href="sousuo.html?ProductClassID=139">牛肚</a>
+<span>|</span><a href="sousuo.html?ProductClassID=140">牛舌</a>
+<span>|</span><a href="sousuo.html?ProductClassID=141">牛蹄</a>
+<span>|</span><a href="sousuo.html?ProductClassID=56">肥牛卷</a>
+<span>|</span><a href="sousuo.html?ProductClassID=403">牛脖肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=405">牛颈肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=406">牛上脑</a>
+<span>|</span><a href="sousuo.html?ProductClassID=407">带骨腹肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=408">前胸肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=409">后胸肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=410">眼肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=411">西冷</a>
+<span>|</span><a href="sousuo.html?ProductClassID=412">臀肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=413">和尚头</a>
+<span>|</span><a href="sousuo.html?ProductClassID=414">米龙</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=5">羊<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=60">羊排</a>
+<span>|</span><a href="sousuo.html?ProductClassID=142">羊肉</a>
+<span>|</span><a href="sousuo.html?ProductClassID=143">羊蝎子</a>
+<span>|</span><a href="sousuo.html?ProductClassID=58">羊腿</a>
+<span>|</span><a href="sousuo.html?ProductClassID=144">羊霖</a>
+<span>|</span><a href="sousuo.html?ProductClassID=145">羊脖子</a>
+<span>|</span><a href="sousuo.html?ProductClassID=146">羊前后棒</a>
+<span>|</span><a href="sousuo.html?ProductClassID=62">羊肚</a>
+<span>|</span><a href="sousuo.html?ProductClassID=61">羊肉卷</a>
+<span>|</span><a href="sousuo.html?ProductClassID=147">羊肩片</a>
+<span>|</span><a href="sousuo.html?ProductClassID=59">羊肩</a>
+<span>|</span><a href="sousuo.html?ProductClassID=149">羊脚</a>
+<span>|</span><a href="sousuo.html?ProductClassID=419">白条羊</a>
+<span>|</span><a href="sousuo.html?ProductClassID=420">肥羊</a>
+</div>
+</div>
+</div>
+</li>
+<li class="pro-sort">
+<div class="sort-first">
+<i class="fa fa-caret-right"></i>
+<a class="tit" href="sousuo.html?ProductClassID=16">鱼/虾/蟹</a>
+<div class="con">
+<a href="sousuo.html?ProductClassID=20">鱼</a>
+<a href="sousuo.html?ProductClassID=22">虾</a>
+<a href="sousuo.html?ProductClassID=150">蟹</a>
+</div>
+</div>
+<div class="sort-second">
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=20">鱼<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=28">带鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=151">鲳鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=152">银鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=24">银鳕鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=25">鳗鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=153">明太鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=155">马面鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=156">松鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=157">马加鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=158">白姑鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=159">黄菇鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=31">黄花鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=23">三文鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=32">龙利鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=26">金枪鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=29">秋刀鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=160">鲅鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=161">比目鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=162">红鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=163">冰鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=30">多春鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=164">多宝鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=165">鲛鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=166">雷鱼</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=22">虾<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=167">青虾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=36">红虾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=168">白虾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=169">对虾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=170">爬虾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=171">竹节虾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=172">虾仁</a>
+<span>|</span><a href="sousuo.html?ProductClassID=173">小龙虾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=174">龙虾尾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=175">虎虾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=176">大龙虾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=177">北极虾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=178">甜虾</a>
+<span>|</span><a href="sousuo.html?ProductClassID=179">海龙虾</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=150">蟹<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=41">帝王蟹</a>
+<span>|</span><a href="sousuo.html?ProductClassID=180">面包蟹</a>
+<span>|</span><a href="sousuo.html?ProductClassID=181">蟹腿</a>
+<span>|</span><a href="sousuo.html?ProductClassID=182">蟹黄</a>
+<span>|</span><a href="sousuo.html?ProductClassID=183">黄金蟹</a>
+<span>|</span><a href="sousuo.html?ProductClassID=184">甜蟹</a>
+<span>|</span><a href="sousuo.html?ProductClassID=185">蟹脚</a>
+<span>|</span><a href="sousuo.html?ProductClassID=40">大闸蟹</a>
+</div>
+</div>
+</div>
+</li>
+<li class="pro-sort">
+<div class="sort-first">
+<i class="fa fa-caret-right"></i>
+<a class="tit" href="sousuo.html?ProductClassID=13">贝类</a>
+<div class="con">
+<a href="sousuo.html?ProductClassID=21">贝类</a>
+</div>
+</div>
+<div class="sort-second">
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=21">贝类<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=186">鲍鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=187">墨鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=188">鱿鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=189">章鱼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=34">青口贝</a>
+<span>|</span><a href="sousuo.html?ProductClassID=190">日月贝</a>
+<span>|</span><a href="sousuo.html?ProductClassID=35">扇贝</a>
+<span>|</span><a href="sousuo.html?ProductClassID=33">北极贝</a>
+<span>|</span><a href="sousuo.html?ProductClassID=193">蛤蜊</a>
+<span>|</span><a href="sousuo.html?ProductClassID=195">赤贝</a>
+<span>|</span><a href="sousuo.html?ProductClassID=196">江瑶贝</a>
+<span>|</span><a href="sousuo.html?ProductClassID=197">鸟贝</a>
+<span>|</span><a href="sousuo.html?ProductClassID=198">象牙贝</a>
+<span>|</span><a href="sousuo.html?ProductClassID=199">白蚌</a>
+<span>|</span><a href="sousuo.html?ProductClassID=200">海螺</a>
+<span>|</span><a href="sousuo.html?ProductClassID=201">生蚝</a>
+<span>|</span><a href="sousuo.html?ProductClassID=202">海参</a>
+</div>
+</div>
+</div>
+</li>
+<li class="pro-sort">
+<div class="sort-first">
+<i class="fa fa-caret-right"></i>
+<a class="tit" href="sousuo.html?ProductClassID=17">调理类</a>
+<div class="con">
+<a href="sousuo.html?ProductClassID=77">火锅</a>
+<a href="sousuo.html?ProductClassID=78">饺子汤圆</a>
+<a href="sousuo.html?ProductClassID=112">烘焙类</a>
+<a href="sousuo.html?ProductClassID=14">面点</a>
+<a href="sousuo.html?ProductClassID=109">油炸烧烤</a>
+<a href="sousuo.html?ProductClassID=424">其他调理类</a>
+</div>
+</div>
+<div class="sort-second">
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=77">火锅<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=94">肉丸</a>
+<span>|</span><a href="sousuo.html?ProductClassID=96">鱼丸</a>
+<span>|</span><a href="sousuo.html?ProductClassID=97">虾丸</a>
+<span>|</span><a href="sousuo.html?ProductClassID=104">鱼饺</a>
+<span>|</span><a href="sousuo.html?ProductClassID=203">燕饺</a>
+<span>|</span><a href="sousuo.html?ProductClassID=204">香菇饺</a>
+<span>|</span><a href="sousuo.html?ProductClassID=205">虾滑</a>
+<span>|</span><a href="sousuo.html?ProductClassID=105">鱼滑</a>
+<span>|</span><a href="sousuo.html?ProductClassID=106">香肠</a>
+<span>|</span><a href="sousuo.html?ProductClassID=428">蟹柳</a>
+<span>|</span><a href="sousuo.html?ProductClassID=429">火腿</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=78">饺子汤圆<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=98">水饺</a>
+<span>|</span><a href="sousuo.html?ProductClassID=206">蒸饺</a>
+<span>|</span><a href="sousuo.html?ProductClassID=207">煎饺</a>
+<span>|</span><a href="sousuo.html?ProductClassID=208">汤圆</a>
+<span>|</span><a href="sousuo.html?ProductClassID=209">馄饨</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=112">烘焙类<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=113">披萨</a>
+<span>|</span><a href="sousuo.html?ProductClassID=114">手抓饼</a>
+<span>|</span><a href="sousuo.html?ProductClassID=115">馅饼</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=14">面点<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=15">包点</a>
+<span>|</span><a href="sousuo.html?ProductClassID=80">馒头</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=109">油炸烧烤<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=110">油炸小吃</a>
+<span>|</span><a href="sousuo.html?ProductClassID=111">烧烤类</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=424">其他调理类<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=425">豆皮</a>
+<span>|</span><a href="sousuo.html?ProductClassID=426">腐竹</a>
+<span>|</span><a href="sousuo.html?ProductClassID=427">快餐半成品</a>
+</div>
+</div>
+</div>
+</li>
+<li class="pro-sort">
+<div class="sort-first">
+<i class="fa fa-caret-right"></i>
+<a class="tit" href="sousuo.html?ProductClassID=19">其它</a>
+<div class="con">
+<a href="sousuo.html?ProductClassID=100">海藻</a>
+<a href="sousuo.html?ProductClassID=211">其它</a>
+</div>
+</div>
+<div class="sort-second">
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=100">海藻<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=101">海带</a>
+<span>|</span><a href="sousuo.html?ProductClassID=212">海茸</a>
+<span>|</span><a href="sousuo.html?ProductClassID=213">裙带菜</a>
+<span>|</span><a href="sousuo.html?ProductClassID=214">海草</a>
+</div>
+</div>
+<div class="second-list">
+<a class="second-tit" href="sousuo.html?ProductClassID=211">其它<i class="fa fa-angle-right"></i></a>
+<div class="second-con">
+<span>|</span><a href="sousuo.html?ProductClassID=215">其它</a>
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+            </dt>
+            <dd><a href="index.html" class="selected"> 首页</a></dd>
+              <dd><a href="productform.html" target="_self" title="资源" class="">资源</a></dd>
+<dd><a href="caigou.html"  title="采购" class="">采购</a></dd>
+<dd><a href="sousuo.html"  title="搜索" class="">搜索</a></dd>
+<dd><a href="/Logistic/index.html" target="_blank" title="物流" class="">物流</a></dd>
+<dd><a href="trad.html" target="_self" title="行情" class="">行情</a></dd>
+<dd><a href="jifenshangcheng.html"  title="积分商城" class="">积分商城</a></dd>
+<dd><a href="huiyuanjulebu.html"  title="会员俱乐部" class="">会员俱乐部</a></dd>
+
+           
+        </dl>
+    </div>
+</nav>
+
+<script type="text/javascript">
+    //页面加载
+    $(function () {
+    
+    });
+</script>
+    
+    <div class="content">
+        <div class="container">
+            <!--首页banner-->
+            <div id="bannerIndex" class="banner-index">
+                <div class="hd">
+                    
+<ul>
+    
+            <li class="on">1</li>
+        
+            <li class="">2</li>
+        
+</ul>
+
+
+                </div>
+                <div class="bd">
+                    
+<ul id="ulContent">
+    
+            <li><a href="/"  title="首页1" target="_blank"><img src="/Files/Ad/百鲜banner步步领鲜2_9908.jpg" /></a></li>
+        
+            <li><a href="/"  title="首页2" target="_blank"><img src="/Files/Ad/banner-index01.jpg" /></a></li>
+        
+</ul>
+
+
+
+                </div>
+                <a class="prev" href="javascript:void(0)"></a><a class="next" href="javascript:void(0)">
+                </a>
+            </div>
+            <!--交易行情01-->
+            <div class="quotes01">
+                <div class="lib-tab1">
+                    <ul class="lib-menu">
+                        <li class="hover">
+                            交易行情</li>
+                        <li id="ctl00_ContentPlaceHolder1_wuliuli">
+                            物流行情</li>
+                        <li>
+                            市场行情</li>
+                    </ul>
+                    <div class="lib-content">
+                        <div class="child-content" style="display: block;">
+                            <div class="banner-quotes01"> <div class="hd"><ul><li class="on"></li><li class=""></li><li class=""></li></ul></div><div class="bd"><ul><li><dl class="accordion" id="my-accordion"></dl></li><li><dl class="accordion" id="my-accordion"></dl></li><li><dl class="accordion" id="my-accordion"></dl></li></ul></div></div>
+                        </div>
+                        <!--物流指数-->
+                        <div id="ctl00_ContentPlaceHolder1_wuliucontent" class="child-content" style="display: none;">
+                            <div class="banner-quotes01">
+                                <div class="hd">
+                                    <ul>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <ul>
+                                        <li>
+                                            <dl class="accordion" id="my-accordion">
+                                                
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="accordion" id="my-accordion">
+                                                
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="accordion" id="my-accordion">
+                                                
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--物流指数End-->
+                        <div class="child-content" style="display: none;">
+                            <div class="banner-quotes01"> <div class="hd"><ul><li class="on"></li><li class=""></li><li class=""></li></ul></div><div class="bd"><ul><li><dl class="accordion" id="my-accordion"><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="鸡腿">鸡腿</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥21.0 - ￥22.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  09:56</div><div class="quotes01-name" title="鸡腿">鸡腿</div><div class="quotes01-prices">￥<span>21.5</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="鸡翅">鸡翅</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥20.0 - ￥20.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  09:56</div><div class="quotes01-name" title="鸡翅">鸡翅</div><div class="quotes01-prices">￥<span>20.0</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="鸡爪">鸡爪</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥30.0 - ￥30.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  09:56</div><div class="quotes01-name" title="鸡爪">鸡爪</div><div class="quotes01-prices">￥<span>30.0</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="鸡胗">鸡胗</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥10.0 - ￥10.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  09:56</div><div class="quotes01-name" title="鸡胗">鸡胗</div><div class="quotes01-prices">￥<span>10.0</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd></dl></li><li><dl class="accordion" id="my-accordion"><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="羊腿">羊腿</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥24.0 - ￥24.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  15:42</div><div class="quotes01-name" title="羊腿">羊腿</div><div class="quotes01-prices">￥<span>24.0</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="羊肩">羊肩</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥20.0 - ￥20.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  15:42</div><div class="quotes01-name" title="羊肩">羊肩</div><div class="quotes01-prices">￥<span>20.0</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="羊排">羊排</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥22.0 - ￥22.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  15:42</div><div class="quotes01-name" title="羊排">羊排</div><div class="quotes01-prices">￥<span>22.0</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="羊肚">羊肚</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥23.0 - ￥23.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  15:42</div><div class="quotes01-name" title="羊肚">羊肚</div><div class="quotes01-prices">￥<span>23.0</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd></dl></li><li><dl class="accordion" id="my-accordion"><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="银鳕鱼">银鳕鱼</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥257.0 - ￥257.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  09:41</div><div class="quotes01-name" title="银鳕鱼">银鳕鱼</div><div class="quotes01-prices">￥<span>257.0</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="金枪鱼">金枪鱼</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥231.0 - ￥231.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  09:41</div><div class="quotes01-name" title="金枪鱼">金枪鱼</div><div class="quotes01-prices">￥<span>231.0</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="带鱼">带鱼</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥65.0 - ￥65.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  09:41</div><div class="quotes01-name" title="带鱼">带鱼</div><div class="quotes01-prices">￥<span>65.0</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd><dt style="background:url(../images/quotes-bg05.png) no-repeat 230px center"><div class="quotes01-name" title="秋刀鱼">秋刀鱼</div><div class="quotes01-weight">KG</div><div class="quotes01-prices">￥32.0 - ￥32.0</div></dt><dd style="background: url(../images/quotes-bg06.png) repeat-x;"><div class="quotes01-date">交易日期：03月21日  09:41</div><div class="quotes01-name" title="秋刀鱼">秋刀鱼</div><div class="quotes01-prices">￥<span>32.0</span></div><div class="quotes01-percent">0.0</div> <div class="quotes01-weight">&nbsp;</div> </dd></dl></li></ul></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--找货助手-->
+            
+<div class="helpMe">
+           <img src="images/helpMe-icon01.png" alt="" class="helpMe-img">
+           <form action="helpme.html" method="post">
+           
+               <input type="text" class="helpMe-input"  name="helpContent"  placeholder="写下您的真实需求，收到后我们会立即给您回电确认。" />
+               <input type="submit" class="helpMe-sub" />
+           </form>
+           <div class="helpMe-tel">400-881-6229</div>
+        </div>
+            <!--交易行情02-->
+            
+
+
+<div class="quotes02">
+            <h5>交易行情</h5>
+            <div class="lib-tab2">
+                <ul class="lib-menu">
+                 
+                            
+                    <li class="hover" pid="1" title="禽类">禽类</li>
+                     
+                            
+                    <li class="" pid="116" title="畜类">畜类</li>
+                     
+                            
+                    <li class="" pid="16" title="鱼/虾/蟹">鱼/虾/蟹</li>
+                     
+                            
+                    <li class="" pid="13" title="贝类">贝类</li>
+                     
+                            
+                    <li class="" pid="17" title="调理类">调理类</li>
+                     
+                            
+                    <li class="" pid="19" title="其它">其它</li>
+                     
+                  
+                </ul>
+                <div class="lib-content">
+                  
+                    <div class="child-content" style='display:block;'>
+                        <!-- 交易行情02广告 -->
+                        <div class="banner-quotes02">
+                        <div class="hd"><ul><li class="on">1</li></ul></div><div class="bd"><ul><li><a href="#"><img src="/Files/Ad/禽类_9843.jpg" alt=""></a></li></ul> </div>
+                            
+                        </div>
+                        <!-- 交易行情02 信息列表 -->
+                        <table class="quotes02-list">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">最近价格概况</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   
+                                <td><table rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td title="鸡腿">鸡腿</td><td>KG</td><td ><span class="jqjg">￥21.0 - ￥22.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鸡翅">鸡翅</td><td>KG</td><td ><span class="jqjg">￥20.0 - ￥20.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鸡爪">鸡爪</td><td>KG</td><td ><span class="jqjg">￥30.0 - ￥30.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鸡胗">鸡胗</td><td>KG</td><td ><span class="jqjg">￥10.0 - ￥10.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鸡软骨">鸡软骨</td><td>KG</td><td ><span class="jqjg">￥48.0 - ￥52.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鸡架">鸡架</td><td>KG</td><td ><span class="jqjg">￥7.0 - ￥8.5</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鸭胗">鸭胗</td><td>KG</td><td ><span class="jqjg">￥30.0 - ￥30.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鸭胸肉">鸭胸肉</td><td>KG</td><td ><span class="jqjg">￥13.0 - ￥15.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鸭翅">鸭翅</td><td>KG</td><td ><span class="jqjg">￥13.0 - ￥15.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鸭腿">鸭腿</td><td>KG</td><td ><span class="jqjg">￥14.0 - ￥15.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鸭掌">鸭掌</td><td>KG</td><td ><span class="jqjg">￥22.0 - ￥23.0</span></td><td  style="text-indent:5px;">0.0</td></tr></tbody></table></td><td><table style="float:right;" rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td  title="鸭头">鸭头</td><td  >KG</td><td ><span class="jqjg">￥20.0 - ￥23.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="鸭脖">鸭脖</td><td  >KG</td><td ><span class="jqjg">￥17.0 - ￥19.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="整鸡">整鸡</td><td  >KG</td><td ><span class="jqjg">￥11.0 - ￥14.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="中翅">中翅</td><td  >KG</td><td ><span class="jqjg">￥34.0 - ￥39.5</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="翅尖">翅尖</td><td  >KG</td><td ><span class="jqjg">￥11.0 - ￥13.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="琵琶腿">琵琶腿</td><td  >KG</td><td ><span class="jqjg">￥7.5 - ￥18.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="鸡胸肉">鸡胸肉</td><td  >KG</td><td ><span class="jqjg">￥13.0 - ￥24.5</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="鸡心">鸡心</td><td  >KG</td><td ><span class="jqjg">￥10.0 - ￥11.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="整鸭">整鸭</td><td  >KG</td><td ><span class="jqjg">￥13.0 - ￥15.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="鸭舌">鸭舌</td><td  >KG</td><td ><span class="jqjg">￥85.0 - ￥88.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="鸭心">鸭心</td><td  >KG</td><td ><span class="jqjg">￥12.0 - ￥14.0</span></td><td  style="text-indent:5px;">0.0</td></tr></tbody></table></td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="child-content" style='display:none;'>
+                        <!-- 交易行情02广告 -->
+                        <div class="banner-quotes02">
+                        <div class="hd"><ul><li class="on">1</li></ul></div><div class="bd"><ul><li><a href="#"><img src="/Files/ProductAd/畜类_7141.jpg" alt=""></a></li></ul> </div>
+                            
+                        </div>
+                        <!-- 交易行情02 信息列表 -->
+                        <table class="quotes02-list">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">最近价格概况</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   
+                                <td><table rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td title="羊腿">羊腿</td><td>KG</td><td ><span class="jqjg">￥24.0 - ￥24.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="羊肩">羊肩</td><td>KG</td><td ><span class="jqjg">￥20.0 - ￥20.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="羊排">羊排</td><td>KG</td><td ><span class="jqjg">￥22.0 - ￥22.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="羊肚">羊肚</td><td>KG</td><td ><span class="jqjg">￥23.0 - ￥23.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="排骨">排骨</td><td>KG</td><td ><span class="jqjg">￥36.0 - ￥36.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="猪肚">猪肚</td><td>KG</td><td ><span class="jqjg">￥41.0 - ￥41.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="五花肉">五花肉</td><td>KG</td><td ><span class="jqjg">￥33.0 - ￥33.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="猪脚">猪脚</td><td>KG</td><td ><span class="jqjg">￥36.0 - ￥36.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="羊肉卷">羊肉卷</td><td>KG</td><td ><span class="jqjg">￥23.0 - ￥23.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="牛仔骨">牛仔骨</td><td>KG</td><td ><span class="jqjg">￥56.0 - ￥56.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="牛腱">牛腱</td><td>KG</td><td ><span class="jqjg">￥45.0 - ￥45.0</span></td><td  style="text-indent:5px;">0.0</td></tr></tbody></table></td><td><table style="float:right;" rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td  title="牛腩">牛腩</td><td  >KG</td><td ><span class="jqjg">￥56.0 - ￥56.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="牛柳">牛柳</td><td  >KG</td><td ><span class="jqjg">￥128.0 - ￥128.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="牛肚">牛肚</td><td  >KG</td><td ><span class="jqjg">￥56.0 - ￥56.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="牛蹄">牛蹄</td><td  >KG</td><td ><span class="jqjg">￥24.0 - ￥24.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="肥牛卷">肥牛卷</td><td  >KG</td><td ><span class="jqjg">￥60.0 - ￥60.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="带骨腹肉">带骨腹肉</td><td  >KG</td><td ><span class="jqjg">￥78.0 - ￥78.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="眼肉">眼肉</td><td  >KG</td><td ><span class="jqjg">￥178.0 - ￥178.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="西冷">西冷</td><td  >KG</td><td ><span class="jqjg">￥180.0 - ￥180.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="羊霖">羊霖</td><td  >KG</td><td ><span class="jqjg">￥52.0 - ￥52.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="白条羊">白条羊</td><td  >KG</td><td ><span class="jqjg">￥35.0 - ￥35.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="脊骨">脊骨</td><td  >KG</td><td ><span class="jqjg">￥36.0 - ￥36.0</span></td><td  style="text-indent:5px;">0.0</td></tr></tbody></table></td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="child-content" style='display:none;'>
+                        <!-- 交易行情02广告 -->
+                        <div class="banner-quotes02">
+                        <div class="hd"><ul><li class="on">1</li></ul></div><div class="bd"><ul><li><a href="#"><img src="/Files/ProductAd/海鲜_3283.jpg" alt=""></a></li></ul> </div>
+                            
+                        </div>
+                        <!-- 交易行情02 信息列表 -->
+                        <table class="quotes02-list">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">最近价格概况</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   
+                                <td><table rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td title="银鳕鱼">银鳕鱼</td><td>KG</td><td ><span class="jqjg">￥257.0 - ￥257.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="金枪鱼">金枪鱼</td><td>KG</td><td ><span class="jqjg">￥231.0 - ￥231.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="带鱼">带鱼</td><td>KG</td><td ><span class="jqjg">￥65.0 - ￥65.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="秋刀鱼">秋刀鱼</td><td>KG</td><td ><span class="jqjg">￥32.0 - ￥32.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="多春鱼">多春鱼</td><td>KG</td><td ><span class="jqjg">￥17.0 - ￥17.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="黄花鱼">黄花鱼</td><td>KG</td><td ><span class="jqjg">￥43.0 - ￥43.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="龙利鱼">龙利鱼</td><td>KG</td><td ><span class="jqjg">￥15.0 - ￥15.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="红虾">红虾</td><td>KG</td><td ><span class="jqjg">￥75.0 - ￥75.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鳗鱼">鳗鱼</td><td>KG</td><td ><span class="jqjg">￥22.0 - ￥22.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鲳鱼">鲳鱼</td><td>KG</td><td ><span class="jqjg">￥19.0 - ￥19.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="银鱼">银鱼</td><td>KG</td><td ><span class="jqjg">￥30.0 - ￥30.0</span></td><td  style="text-indent:5px;">0.0</td></tr></tbody></table></td><td><table style="float:right;" rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td  title="明太鱼">明太鱼</td><td  >KG</td><td ><span class="jqjg">￥23.0 - ￥23.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="马面鱼">马面鱼</td><td  >KG</td><td ><span class="jqjg">￥20.0 - ￥20.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="松鱼">松鱼</td><td  >KG</td><td ><span class="jqjg">￥20.0 - ￥20.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="黄菇鱼">黄菇鱼</td><td  >KG</td><td ><span class="jqjg">￥20.0 - ￥20.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="对虾">对虾</td><td  >KG</td><td ><span class="jqjg">￥23.0 - ￥23.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="多宝鱼">多宝鱼</td><td  >KG</td><td ><span class="jqjg">￥15.0 - ￥15.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="大闸蟹">大闸蟹</td><td  >KG</td><td ><span class="jqjg">￥100.0 - ￥100.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="三文鱼">三文鱼</td><td  >KG</td><td ><span class="jqjg">￥80.0 - ￥80.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="冰鱼">冰鱼</td><td  >KG</td><td ><span class="jqjg">￥10.0 - ￥10.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td  title="比目鱼">比目鱼</td><td  >KG</td><td ><span class="jqjg">￥20.0 - ￥20.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="child-content" style='display:none;'>
+                        <!-- 交易行情02广告 -->
+                        <div class="banner-quotes02">
+                        <div class="hd"><ul><li class="on">1</li></ul></div><div class="bd"><ul><li><a href="#"><img src="/Files/ProductAd/贝类_1308.jpg" alt=""></a></li></ul> </div>
+                            
+                        </div>
+                        <!-- 交易行情02 信息列表 -->
+                        <table class="quotes02-list">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">最近价格概况</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   
+                                <td><table rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td title="北极贝">北极贝</td><td>KG</td><td ><span class="jqjg">￥188.0 - ￥188.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="青口贝">青口贝</td><td>KG</td><td ><span class="jqjg">￥35.0 - ￥35.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="扇贝">扇贝</td><td>KG</td><td ><span class="jqjg">￥24.0 - ￥24.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鲍鱼">鲍鱼</td><td>KG</td><td ><span class="jqjg">￥120.0 - ￥120.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="墨鱼">墨鱼</td><td>KG</td><td ><span class="jqjg">￥23.0 - ￥23.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="蛤蜊">蛤蜊</td><td>KG</td><td ><span class="jqjg">￥6.0 - ￥6.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="生蚝">生蚝</td><td>KG</td><td ><span class="jqjg">￥30.0 - ￥30.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="海参">海参</td><td>KG</td><td ><span class="jqjg">￥230.0 - ￥230.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鱿鱼">鱿鱼</td><td>KG</td><td ><span class="jqjg">￥22.0 - ￥22.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></td><td><table style="float:right;" rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="child-content" style='display:none;'>
+                        <!-- 交易行情02广告 -->
+                        <div class="banner-quotes02">
+                        <div class="hd"><ul><li class="on">1</li></ul></div><div class="bd"><ul><li><a href="#"><img src="/Files/ProductAd/调理_5286.jpg" alt=""></a></li></ul> </div>
+                            
+                        </div>
+                        <!-- 交易行情02 信息列表 -->
+                        <table class="quotes02-list">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">最近价格概况</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   
+                                <td><table rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td title="包点">包点</td><td>KG</td><td ><span class="jqjg">￥7.0 - ￥43.0</span></td><td  style="text-indent:5px;color:red;">2.4%</td></tr><tr><td title="油炸小吃">油炸小吃</td><td>KG</td><td ><span class="jqjg">￥8.0 - ￥98.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="水饺">水饺</td><td>KG</td><td ><span class="jqjg">￥45.0 - ￥49.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="烧烤类">烧烤类</td><td>KG</td><td ><span class="jqjg">￥20.0 - ￥58.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="披萨">披萨</td><td>KG</td><td ><span class="jqjg">￥10.0 - ￥10.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="肉丸">肉丸</td><td>KG</td><td ><span class="jqjg">￥27.0 - ￥44.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鱼丸">鱼丸</td><td>KG</td><td ><span class="jqjg">￥19.0 - ￥30.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="香肠">香肠</td><td>KG</td><td ><span class="jqjg">￥17.0 - ￥17.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="虾丸">虾丸</td><td>KG</td><td ><span class="jqjg">￥40.0 - ￥40.0</span></td><td  style="text-indent:5px;color:red;">17.6%</td></tr><tr><td title="鱼饺">鱼饺</td><td>KG</td><td ><span class="jqjg">￥26.0 - ￥2600.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="鱼滑">鱼滑</td><td>KG</td><td ><span class="jqjg">￥27.0 - ￥28.0</span></td><td  style="text-indent:5px;">0.0</td></tr></tbody></table></td><td><table style="float:right;" rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td  title="馄饨">馄饨</td><td  >KG</td><td ><span class="jqjg">￥47.0 - ￥49.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="child-content" style='display:none;'>
+                        <!-- 交易行情02广告 -->
+                        <div class="banner-quotes02">
+                        <div class="hd"><ul><li class="on">1</li></ul></div><div class="bd"><ul><li><a href="/sousuo.html?ProductClassID=19"><img src="/Files/ProductAd/裙带菜_7198.jpg" alt=""></a></li></ul> </div>
+                            
+                        </div>
+                        <!-- 交易行情02 信息列表 -->
+                        <table class="quotes02-list">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">最近价格概况</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   
+                                <td><table rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td title="裙带菜">裙带菜</td><td>KG</td><td ><span class="jqjg">￥50.0 - ￥50.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="海草">海草</td><td>KG</td><td ><span class="jqjg">￥100.0 - ￥100.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td title="其它">其它</td><td>KG</td><td ><span class="jqjg">￥10.0 - ￥10.0</span></td><td  style="text-indent:5px;">0.0</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></td><td><table style="float:right;" rules="none"><thead><tr><th width="15%">产品</th><th width="10%">单位</th><th width="30%">价格区间</th><th width="15%" style="text-indent:5px;">波动</th></tr> </thead><tbody><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+                          
+                              
+                       
+                     
+            <!--实时交易-->
+            
+<div class="trading">
+           <div class="tit">实时交易信息</div>
+           <dl class="con">
+               <dt>
+                   <div class="trading-user">用户</div>
+                   <div class="trading-con">采购内容</div>
+                   <div class="trading-state">交易状态</div>
+                   <div class="trading-date">时间</div>
+               </dt>
+               <dd class="txtScroll-top">
+                    <div class="bd">
+                        <ul>
+                             
+                        </ul>
+                    </div>
+               </dd>
+           </dl>
+        </div>
+            <!-- 首页广告 -->
+            <a class="index-add">
+                <img src="images/index-add01.jpg" alt="">
+            </a>
+            <!--查询工具-->
+            
+
+<script type="text/javascript">
+    $(function () {
+
+        //==========操作==============
+        var inpcity = $("input[name=selcity]");
+        var inparea = $("input[name=selarea]");
+        //查询线路
+        $('#inquirySearch').click(function () {
+            var scity = $.trim($("input[name=inpscity]").val()) == "请输入城市" || $.trim($("input[name=inpscity]").val()) == ""; //发货城市是否为空
+            var ecity = $.trim($("input[name=inpecity]").val()) == "请输入城市" || $.trim($("input[name=inpecity]").val()) == ""; //收货城市是否为空
+            var scityid = inpcity.eq(0).val() == ""; //发货城市ID是否为空
+            var ecityid = inpcity.eq(1).val() == ""; //收货城市ID是否为空
+            if (scity) {
+                inpcity.eq(0).val("");
+                if (ecity) {
+                    inpcity.eq(1).val("");
+                    $(this).next("span").html("请选择发货城市");
+                    return false;
+                }
+                else {
+                    if (ecityid) {
+                        $(this).next("span").html("请选择发货城市");
+                        return false;
+                    }
+                }
+            }
+            else {
+                if (ecity) {
+                    inpcity.eq(1).val("");
+                    if (scityid) {
+                        $(this).next("span").html("请选择发货城市");
+                        return false;
+                    }
+                }
+                else {
+                    if (scityid && ecityid) {
+                        $(this).next("span").html("请选择发货城市");
+                        return false;
+                    }
+                }
+
+            }
+            $(this).next("span").html("");
+            window.open("/Logistic/chaxunxianlu.html?load=1&selcity=" + inpcity.eq(0).val() + "," + inpcity.eq(1).val(), "_blank");
+            // window.location.href = "/Logistic/chaxunxianlu.html?load=1&selcity=" + inpcity.eq(0).val() + "," + inpcity.eq(1).val();
+            return false;
+
+        });
+
+        //查询网点
+
+        var textArea = $("input[name=inpArea]"); //筛选区域文本
+        $("#inquirySearchBranch").click(function () {
+            var IsNUllCityName = $.trim(textArea.val()) == "请输入城市" || $.trim(textArea.val()) == ""; //是否输入城市名称
+            var IsNUllCityID = inpcity.eq(2).val() == ""; //是否选择城市ID
+            var pass = true;
+            if (IsNUllCityName) {
+                pass = false;
+            }
+            else {
+                if (IsNUllCityID) {
+                    pass = false;
+                }
+            }
+            if (!pass) {
+                $(this).next("span").html("请选择省市区");
+            }
+            else {
+                $(this).next("span").html("");
+                window.open("/Logistic/fuwuwangdian.html?selcity=" + inpcity.eq(2).val() + "&selarea=" + inparea.eq(2).val(), "_blank");
+                //window.location.href = "/Logistic/fuwuwangdian.html?selcity=" + inpcity.eq(2).val() + "&selarea=" + inparea.eq(2).val();
+            }
+            return false;
+        });
+
+    })
+
+</script>
+
+<div class="inquiry-tool">
+    <div class="lib-tab3">
+        <ul class="lib-menu">
+            <li class="hover"><i class="fa fa-search-plus"></i>查询路线</li>
+            <li><i class="fa fa-home"></i>仓库查询</li>
+            <li><i class="fa fa-truck"></i>物流跟踪</li>
+        </ul>
+        <div class="lib-content">
+            <div class="child-content" style="display: block;">
+                <label for=""  style="z-index:3;">
+                    <p>
+                        发货地：</p>
+                    <div class="city-linkage">
+                        <input type="text" class="input01 w170" name="inpscity"><i class="fa fa-bars"></i>
+                        
+<style></style>
+<div class="inquiry-list "  >
+    <input type="hidden" name="selcity" />
+    <input type="hidden" name="selarea" />
+    <div class="lib-tab9">
+        <a href="javascript:;" class="closed">X</a>
+        <ul class="lib-menus">
+            <li class="hover">常用</li>
+            <li>省</li>
+            <li>市</li>
+            
+        </ul>
+        <div class="lib-contents">
+            <div class="child-contents" style="display: block;">
+                <div class="inquiry-span" index="0">
+                    
+                            <span data-name="北京市-北京市" data-id="377"
+                                data-pid="1">
+                                北京市</span>
+                        
+                            <span data-name="广东省-广州市" data-id="573"
+                                data-pid="19">
+                                广州市</span>
+                        
+                            <span data-name="广东省-深圳市" data-id="575"
+                                data-pid="19">
+                                深圳市</span>
+                        
+                            <span data-name="天津市-天津市" data-id="3884"
+                                data-pid="2">
+                                天津市</span>
+                        
+                </div>
+            </div>
+            <div class="child-contents" style="display: none;">
+                <div class="inquiry-span" index="1">
+                    <dl>
+                        <dt>A-G</dt>
+                        <dd>
+                            
+                                    <span data-name="北京市" data-pid="1">
+                                        北京市</span>
+                                
+                                    <span data-name="安徽省" data-pid="12">
+                                        安徽省</span>
+                                
+                                    <span data-name="福建省" data-pid="13">
+                                        福建省</span>
+                                
+                                    <span data-name="广东省" data-pid="19">
+                                        广东省</span>
+                                
+                                    <span data-name="广西省" data-pid="20">
+                                        广西省</span>
+                                
+                                    <span data-name="重庆市" data-pid="22">
+                                        重庆市</span>
+                                
+                                    <span data-name="贵州省" data-pid="24">
+                                        贵州省</span>
+                                
+                                    <span data-name="甘肃省" data-pid="28">
+                                        甘肃省</span>
+                                
+                                    <span data-name="澳  门" data-pid="34">
+                                        澳  门</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>H-K</dt>
+                        <dd>
+                            
+                                    <span data-name="河北省" data-pid="3">
+                                        河北省</span>
+                                
+                                    <span data-name="吉林省" data-pid="7">
+                                        吉林省</span>
+                                
+                                    <span data-name="黑龙江" data-pid="8">
+                                        黑龙江</span>
+                                
+                                    <span data-name="江苏省" data-pid="10">
+                                        江苏省</span>
+                                
+                                    <span data-name="江西省" data-pid="14">
+                                        江西省</span>
+                                
+                                    <span data-name="河南省" data-pid="16">
+                                        河南省</span>
+                                
+                                    <span data-name="湖北省" data-pid="17">
+                                        湖北省</span>
+                                
+                                    <span data-name="湖南省" data-pid="18">
+                                        湖南省</span>
+                                
+                                    <span data-name="海南省" data-pid="21">
+                                        海南省</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>L-S</dt>
+                        <dd>
+                            
+                                    <span data-name="山西省" data-pid="4">
+                                        山西省</span>
+                                
+                                    <span data-name="内蒙古" data-pid="5">
+                                        内蒙古</span>
+                                
+                                    <span data-name="辽宁省" data-pid="6">
+                                        辽宁省</span>
+                                
+                                    <span data-name="上海市" data-pid="9">
+                                        上海市</span>
+                                
+                                    <span data-name="山东省" data-pid="15">
+                                        山东省</span>
+                                
+                                    <span data-name="四川省" data-pid="23">
+                                        四川省</span>
+                                
+                                    <span data-name="陕西省" data-pid="27">
+                                        陕西省</span>
+                                
+                                    <span data-name="青海省" data-pid="29">
+                                        青海省</span>
+                                
+                                    <span data-name="宁  夏" data-pid="30">
+                                        宁  夏</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>T-Z</dt>
+                        <dd>
+                            
+                                    <span data-name="天津市" data-pid="2">
+                                        天津市</span>
+                                
+                                    <span data-name="浙江省" data-pid="11">
+                                        浙江省</span>
+                                
+                                    <span data-name="云南省" data-pid="25">
+                                        云南省</span>
+                                
+                                    <span data-name="西  藏" data-pid="26">
+                                        西  藏</span>
+                                
+                                    <span data-name="新  疆" data-pid="31">
+                                        新  疆</span>
+                                
+                                    <span data-name="台湾省" data-pid="32">
+                                        台湾省</span>
+                                
+                                    <span data-name="香  港" data-pid="33">
+                                        香  港</span>
+                                
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="child-contents" style="display: none;">
+                <div class="inquiry-span" index="2">
+                </div>
+            </div>
+             
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </label>
+                <label for="">
+                    <p>
+                        收货地：</p>
+                    <div class="city-linkage">
+                    <input type="text" class="input01 w170"  name="inpecity"> <i class="fa fa-bars"></i>
+                                
+<style></style>
+<div class="inquiry-list "  >
+    <input type="hidden" name="selcity" />
+    <input type="hidden" name="selarea" />
+    <div class="lib-tab9">
+        <a href="javascript:;" class="closed">X</a>
+        <ul class="lib-menus">
+            <li class="hover">常用</li>
+            <li>省</li>
+            <li>市</li>
+            
+        </ul>
+        <div class="lib-contents">
+            <div class="child-contents" style="display: block;">
+                <div class="inquiry-span" index="0">
+                    
+                            <span data-name="北京市-北京市" data-id="377"
+                                data-pid="1">
+                                北京市</span>
+                        
+                            <span data-name="广东省-广州市" data-id="573"
+                                data-pid="19">
+                                广州市</span>
+                        
+                            <span data-name="广东省-深圳市" data-id="575"
+                                data-pid="19">
+                                深圳市</span>
+                        
+                            <span data-name="天津市-天津市" data-id="3884"
+                                data-pid="2">
+                                天津市</span>
+                        
+                </div>
+            </div>
+            <div class="child-contents" style="display: none;">
+                <div class="inquiry-span" index="1">
+                    <dl>
+                        <dt>A-G</dt>
+                        <dd>
+                            
+                                    <span data-name="北京市" data-pid="1">
+                                        北京市</span>
+                                
+                                    <span data-name="安徽省" data-pid="12">
+                                        安徽省</span>
+                                
+                                    <span data-name="福建省" data-pid="13">
+                                        福建省</span>
+                                
+                                    <span data-name="广东省" data-pid="19">
+                                        广东省</span>
+                                
+                                    <span data-name="广西省" data-pid="20">
+                                        广西省</span>
+                                
+                                    <span data-name="重庆市" data-pid="22">
+                                        重庆市</span>
+                                
+                                    <span data-name="贵州省" data-pid="24">
+                                        贵州省</span>
+                                
+                                    <span data-name="甘肃省" data-pid="28">
+                                        甘肃省</span>
+                                
+                                    <span data-name="澳  门" data-pid="34">
+                                        澳  门</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>H-K</dt>
+                        <dd>
+                            
+                                    <span data-name="河北省" data-pid="3">
+                                        河北省</span>
+                                
+                                    <span data-name="吉林省" data-pid="7">
+                                        吉林省</span>
+                                
+                                    <span data-name="黑龙江" data-pid="8">
+                                        黑龙江</span>
+                                
+                                    <span data-name="江苏省" data-pid="10">
+                                        江苏省</span>
+                                
+                                    <span data-name="江西省" data-pid="14">
+                                        江西省</span>
+                                
+                                    <span data-name="河南省" data-pid="16">
+                                        河南省</span>
+                                
+                                    <span data-name="湖北省" data-pid="17">
+                                        湖北省</span>
+                                
+                                    <span data-name="湖南省" data-pid="18">
+                                        湖南省</span>
+                                
+                                    <span data-name="海南省" data-pid="21">
+                                        海南省</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>L-S</dt>
+                        <dd>
+                            
+                                    <span data-name="山西省" data-pid="4">
+                                        山西省</span>
+                                
+                                    <span data-name="内蒙古" data-pid="5">
+                                        内蒙古</span>
+                                
+                                    <span data-name="辽宁省" data-pid="6">
+                                        辽宁省</span>
+                                
+                                    <span data-name="上海市" data-pid="9">
+                                        上海市</span>
+                                
+                                    <span data-name="山东省" data-pid="15">
+                                        山东省</span>
+                                
+                                    <span data-name="四川省" data-pid="23">
+                                        四川省</span>
+                                
+                                    <span data-name="陕西省" data-pid="27">
+                                        陕西省</span>
+                                
+                                    <span data-name="青海省" data-pid="29">
+                                        青海省</span>
+                                
+                                    <span data-name="宁  夏" data-pid="30">
+                                        宁  夏</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>T-Z</dt>
+                        <dd>
+                            
+                                    <span data-name="天津市" data-pid="2">
+                                        天津市</span>
+                                
+                                    <span data-name="浙江省" data-pid="11">
+                                        浙江省</span>
+                                
+                                    <span data-name="云南省" data-pid="25">
+                                        云南省</span>
+                                
+                                    <span data-name="西  藏" data-pid="26">
+                                        西  藏</span>
+                                
+                                    <span data-name="新  疆" data-pid="31">
+                                        新  疆</span>
+                                
+                                    <span data-name="台湾省" data-pid="32">
+                                        台湾省</span>
+                                
+                                    <span data-name="香  港" data-pid="33">
+                                        香  港</span>
+                                
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="child-contents" style="display: none;">
+                <div class="inquiry-span" index="2">
+                </div>
+            </div>
+             
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </label>
+                <input type="submit" value="查询" class="btn02" id="inquirySearch"><span id="errmsg" style="color:Red;line-height:70px; margin:0 10px;"></span>
+            </div>
+            <div class="child-content" style="display: none;">
+                <label for="">
+                    <p>
+                        地区：</p> <div class="city-linkage">
+                    <input type="text" class="input01 w170" name="inpArea"> 
+                     
+<style></style>
+<div class="inquiry-list "  >
+    <input type="hidden" name="selcity" />
+    <input type="hidden" name="selarea" />
+    <div class="lib-tab9">
+        <a href="javascript:;" class="closed">X</a>
+        <ul class="lib-menus">
+            <li class="hover">常用</li>
+            <li>省</li>
+            <li>市</li>
+            
+        </ul>
+        <div class="lib-contents">
+            <div class="child-contents" style="display: block;">
+                <div class="inquiry-span" index="0">
+                    
+                            <span data-name="北京市-北京市" data-id="377"
+                                data-pid="1">
+                                北京市</span>
+                        
+                            <span data-name="广东省-广州市" data-id="573"
+                                data-pid="19">
+                                广州市</span>
+                        
+                            <span data-name="广东省-深圳市" data-id="575"
+                                data-pid="19">
+                                深圳市</span>
+                        
+                            <span data-name="天津市-天津市" data-id="3884"
+                                data-pid="2">
+                                天津市</span>
+                        
+                </div>
+            </div>
+            <div class="child-contents" style="display: none;">
+                <div class="inquiry-span" index="1">
+                    <dl>
+                        <dt>A-G</dt>
+                        <dd>
+                            
+                                    <span data-name="北京市" data-pid="1">
+                                        北京市</span>
+                                
+                                    <span data-name="安徽省" data-pid="12">
+                                        安徽省</span>
+                                
+                                    <span data-name="福建省" data-pid="13">
+                                        福建省</span>
+                                
+                                    <span data-name="广东省" data-pid="19">
+                                        广东省</span>
+                                
+                                    <span data-name="广西省" data-pid="20">
+                                        广西省</span>
+                                
+                                    <span data-name="重庆市" data-pid="22">
+                                        重庆市</span>
+                                
+                                    <span data-name="贵州省" data-pid="24">
+                                        贵州省</span>
+                                
+                                    <span data-name="甘肃省" data-pid="28">
+                                        甘肃省</span>
+                                
+                                    <span data-name="澳  门" data-pid="34">
+                                        澳  门</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>H-K</dt>
+                        <dd>
+                            
+                                    <span data-name="河北省" data-pid="3">
+                                        河北省</span>
+                                
+                                    <span data-name="吉林省" data-pid="7">
+                                        吉林省</span>
+                                
+                                    <span data-name="黑龙江" data-pid="8">
+                                        黑龙江</span>
+                                
+                                    <span data-name="江苏省" data-pid="10">
+                                        江苏省</span>
+                                
+                                    <span data-name="江西省" data-pid="14">
+                                        江西省</span>
+                                
+                                    <span data-name="河南省" data-pid="16">
+                                        河南省</span>
+                                
+                                    <span data-name="湖北省" data-pid="17">
+                                        湖北省</span>
+                                
+                                    <span data-name="湖南省" data-pid="18">
+                                        湖南省</span>
+                                
+                                    <span data-name="海南省" data-pid="21">
+                                        海南省</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>L-S</dt>
+                        <dd>
+                            
+                                    <span data-name="山西省" data-pid="4">
+                                        山西省</span>
+                                
+                                    <span data-name="内蒙古" data-pid="5">
+                                        内蒙古</span>
+                                
+                                    <span data-name="辽宁省" data-pid="6">
+                                        辽宁省</span>
+                                
+                                    <span data-name="上海市" data-pid="9">
+                                        上海市</span>
+                                
+                                    <span data-name="山东省" data-pid="15">
+                                        山东省</span>
+                                
+                                    <span data-name="四川省" data-pid="23">
+                                        四川省</span>
+                                
+                                    <span data-name="陕西省" data-pid="27">
+                                        陕西省</span>
+                                
+                                    <span data-name="青海省" data-pid="29">
+                                        青海省</span>
+                                
+                                    <span data-name="宁  夏" data-pid="30">
+                                        宁  夏</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>T-Z</dt>
+                        <dd>
+                            
+                                    <span data-name="天津市" data-pid="2">
+                                        天津市</span>
+                                
+                                    <span data-name="浙江省" data-pid="11">
+                                        浙江省</span>
+                                
+                                    <span data-name="云南省" data-pid="25">
+                                        云南省</span>
+                                
+                                    <span data-name="西  藏" data-pid="26">
+                                        西  藏</span>
+                                
+                                    <span data-name="新  疆" data-pid="31">
+                                        新  疆</span>
+                                
+                                    <span data-name="台湾省" data-pid="32">
+                                        台湾省</span>
+                                
+                                    <span data-name="香  港" data-pid="33">
+                                        香  港</span>
+                                
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="child-contents" style="display: none;">
+                <div class="inquiry-span" index="2">
+                </div>
+            </div>
+             
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </label>
+               
+                <input type="submit" value="查询" class="btn02" id="inquirySearchBranch"><span  style="color:Red;line-height:70px; margin:0 10px;"></span>
+            </div>
+            <div class="child-content" style="display: none;">
+                <label for="">
+                    <p>
+                        运单号：</p>
+                    <input type="text" class="input01 w170">
+                </label>
+                <input type="button" value="查询" class="btn02">
+            </div>
+        </div>
+    </div>
+    <div class="inquiry-pic">
+        <img src="images/inquiry-pic01.png" alt="">
+    </div>
+</div>
+
+            <!--热门路线-->
+            
+
+<div class="popular-routes">
+            <div class="tit">热门线路</div>
+            <div class="con">
+
+            
+                  
+                              <a class="otw" href="/Logistic/chaxunxianlu.html?selcity=575,378" target="_blank">深圳市 <i class="fa fa-long-arrow-right"></i>  石家庄市  24000元/车 元/立方</a>
+                              
+                            
+                              <a class="otw" href="/Logistic/chaxunxianlu.html?selcity=575,379" target="_blank">深圳市 <i class="fa fa-long-arrow-right"></i>  唐山市  24000元/车 元/立方</a>
+                              
+                            
+                              <a class="otw" href="/Logistic/chaxunxianlu.html?selcity=575,380" target="_blank">深圳市 <i class="fa fa-long-arrow-right"></i>  秦皇岛市  22000元/车 元/立方</a>
+                              
+                            
+                              <a class="otw" href="/Logistic/chaxunxianlu.html?selcity=575,381" target="_blank">深圳市 <i class="fa fa-long-arrow-right"></i>  邯郸市  24000元/车 元/立方</a>
+                              
+                            
+                              <a class="otw" href="/Logistic/chaxunxianlu.html?selcity=575,382" target="_blank">深圳市 <i class="fa fa-long-arrow-right"></i>  邢台市  24000元/车 元/立方</a>
+                              
+                            
+                              <a class="otw" href="/Logistic/chaxunxianlu.html?selcity=575,383" target="_blank">深圳市 <i class="fa fa-long-arrow-right"></i>  保定市  24000元/车 元/立方</a>
+                              
+                            
+                              <a class="otw" href="/Logistic/chaxunxianlu.html?selcity=575,384" target="_blank">深圳市 <i class="fa fa-long-arrow-right"></i>  张家口市  24000元/车 元/立方</a>
+                              
+                            
+                              <a class="otw" href="/Logistic/chaxunxianlu.html?selcity=575,385" target="_blank">深圳市 <i class="fa fa-long-arrow-right"></i>  承德市  24000元/车 元/立方</a>
+                              
+                            
+                              <a class="otw" href="/Logistic/chaxunxianlu.html?selcity=575,386" target="_blank">深圳市 <i class="fa fa-long-arrow-right"></i>  沧州市  24000元/车 元/立方</a>
+                              
+                            
+                              <a class="otw" href="/Logistic/chaxunxianlu.html?selcity=575,387" target="_blank">深圳市 <i class="fa fa-long-arrow-right"></i>  廊坊市  24000元/车 元/立方</a>
+                              
+                            
+              
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            $(function () {
+
+                var box_list = $("div.con");
+                var line_list;
+                var div_left, div_right;
+                box_list.each(function () {
+                    div_left = $("<div class=\"routes-left\"></div>");
+                    div_right = $("<div class=\"routes-right\"></div>");
+                    line_list = $(this).find("a.otw");
+                    line_list.each(function (index) {
+                        if (index < 5) {
+                            div_left.append($(this)[0].outerHTML);
+                        }
+                        else {
+                            div_right.append($(this)[0].outerHTML);
+                        }
+                        $(this).remove();
+                    });
+                    $(this).append(div_left);
+                    $(this).append(div_right);
+                });
+            })
+                
+</script>
+
+                      
+                  
+
+            <!--查询货物信息-->
+            <div id="ctl00_ContentPlaceHolder1_inpuiryinfor" class="inquiry-infor" style="overflow: inherit;">
+                <div class="tit">
+                    查询货物信息</div>
+                <div class="con">
+                    <form id="shipinfosearchForm" method="get" action="/Logistic/woyaozhaohuo.html" target="_blank">
+                    <label for="" style="z-index: 1980331; position: relative;">
+                        <p>
+                            发货地：
+                        </p>
+                        <div class="city-linkage">
+                            <input type="text" class="input01 w155">
+                            <i class="fa fa-bars"></i>
+                            
+<style></style>
+<div class="inquiry-list inquiry-tool"  >
+    <input type="hidden" name="selcity" />
+    <input type="hidden" name="selarea" />
+    <div class="lib-tab9">
+        <a href="javascript:;" class="closed">X</a>
+        <ul class="lib-menus">
+            <li class="hover">常用</li>
+            <li>省</li>
+            <li>市</li>
+            
+        </ul>
+        <div class="lib-contents">
+            <div class="child-contents" style="display: block;">
+                <div class="inquiry-span" index="0">
+                    
+                            <span data-name="北京市-北京市" data-id="377"
+                                data-pid="1">
+                                北京市</span>
+                        
+                            <span data-name="广东省-广州市" data-id="573"
+                                data-pid="19">
+                                广州市</span>
+                        
+                            <span data-name="广东省-深圳市" data-id="575"
+                                data-pid="19">
+                                深圳市</span>
+                        
+                            <span data-name="天津市-天津市" data-id="3884"
+                                data-pid="2">
+                                天津市</span>
+                        
+                </div>
+            </div>
+            <div class="child-contents" style="display: none;">
+                <div class="inquiry-span" index="1">
+                    <dl>
+                        <dt>A-G</dt>
+                        <dd>
+                            
+                                    <span data-name="北京市" data-pid="1">
+                                        北京市</span>
+                                
+                                    <span data-name="安徽省" data-pid="12">
+                                        安徽省</span>
+                                
+                                    <span data-name="福建省" data-pid="13">
+                                        福建省</span>
+                                
+                                    <span data-name="广东省" data-pid="19">
+                                        广东省</span>
+                                
+                                    <span data-name="广西省" data-pid="20">
+                                        广西省</span>
+                                
+                                    <span data-name="重庆市" data-pid="22">
+                                        重庆市</span>
+                                
+                                    <span data-name="贵州省" data-pid="24">
+                                        贵州省</span>
+                                
+                                    <span data-name="甘肃省" data-pid="28">
+                                        甘肃省</span>
+                                
+                                    <span data-name="澳  门" data-pid="34">
+                                        澳  门</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>H-K</dt>
+                        <dd>
+                            
+                                    <span data-name="河北省" data-pid="3">
+                                        河北省</span>
+                                
+                                    <span data-name="吉林省" data-pid="7">
+                                        吉林省</span>
+                                
+                                    <span data-name="黑龙江" data-pid="8">
+                                        黑龙江</span>
+                                
+                                    <span data-name="江苏省" data-pid="10">
+                                        江苏省</span>
+                                
+                                    <span data-name="江西省" data-pid="14">
+                                        江西省</span>
+                                
+                                    <span data-name="河南省" data-pid="16">
+                                        河南省</span>
+                                
+                                    <span data-name="湖北省" data-pid="17">
+                                        湖北省</span>
+                                
+                                    <span data-name="湖南省" data-pid="18">
+                                        湖南省</span>
+                                
+                                    <span data-name="海南省" data-pid="21">
+                                        海南省</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>L-S</dt>
+                        <dd>
+                            
+                                    <span data-name="山西省" data-pid="4">
+                                        山西省</span>
+                                
+                                    <span data-name="内蒙古" data-pid="5">
+                                        内蒙古</span>
+                                
+                                    <span data-name="辽宁省" data-pid="6">
+                                        辽宁省</span>
+                                
+                                    <span data-name="上海市" data-pid="9">
+                                        上海市</span>
+                                
+                                    <span data-name="山东省" data-pid="15">
+                                        山东省</span>
+                                
+                                    <span data-name="四川省" data-pid="23">
+                                        四川省</span>
+                                
+                                    <span data-name="陕西省" data-pid="27">
+                                        陕西省</span>
+                                
+                                    <span data-name="青海省" data-pid="29">
+                                        青海省</span>
+                                
+                                    <span data-name="宁  夏" data-pid="30">
+                                        宁  夏</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>T-Z</dt>
+                        <dd>
+                            
+                                    <span data-name="天津市" data-pid="2">
+                                        天津市</span>
+                                
+                                    <span data-name="浙江省" data-pid="11">
+                                        浙江省</span>
+                                
+                                    <span data-name="云南省" data-pid="25">
+                                        云南省</span>
+                                
+                                    <span data-name="西  藏" data-pid="26">
+                                        西  藏</span>
+                                
+                                    <span data-name="新  疆" data-pid="31">
+                                        新  疆</span>
+                                
+                                    <span data-name="台湾省" data-pid="32">
+                                        台湾省</span>
+                                
+                                    <span data-name="香  港" data-pid="33">
+                                        香  港</span>
+                                
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="child-contents" style="display: none;">
+                <div class="inquiry-span" index="2">
+                </div>
+            </div>
+             
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </label>
+                    <label for="" style="z-index: 1980330; position: relative;">
+                        <p>
+                            收货地：</p>
+                        <div class="city-linkage">
+                            <input type="text" class="input01 w155" />
+                            <i class="fa fa-bars"></i>
+                            
+<style></style>
+<div class="inquiry-list inquiry-tool"  >
+    <input type="hidden" name="selcity" />
+    <input type="hidden" name="selarea" />
+    <div class="lib-tab9">
+        <a href="javascript:;" class="closed">X</a>
+        <ul class="lib-menus">
+            <li class="hover">常用</li>
+            <li>省</li>
+            <li>市</li>
+            
+        </ul>
+        <div class="lib-contents">
+            <div class="child-contents" style="display: block;">
+                <div class="inquiry-span" index="0">
+                    
+                            <span data-name="北京市-北京市" data-id="377"
+                                data-pid="1">
+                                北京市</span>
+                        
+                            <span data-name="广东省-广州市" data-id="573"
+                                data-pid="19">
+                                广州市</span>
+                        
+                            <span data-name="广东省-深圳市" data-id="575"
+                                data-pid="19">
+                                深圳市</span>
+                        
+                            <span data-name="天津市-天津市" data-id="3884"
+                                data-pid="2">
+                                天津市</span>
+                        
+                </div>
+            </div>
+            <div class="child-contents" style="display: none;">
+                <div class="inquiry-span" index="1">
+                    <dl>
+                        <dt>A-G</dt>
+                        <dd>
+                            
+                                    <span data-name="北京市" data-pid="1">
+                                        北京市</span>
+                                
+                                    <span data-name="安徽省" data-pid="12">
+                                        安徽省</span>
+                                
+                                    <span data-name="福建省" data-pid="13">
+                                        福建省</span>
+                                
+                                    <span data-name="广东省" data-pid="19">
+                                        广东省</span>
+                                
+                                    <span data-name="广西省" data-pid="20">
+                                        广西省</span>
+                                
+                                    <span data-name="重庆市" data-pid="22">
+                                        重庆市</span>
+                                
+                                    <span data-name="贵州省" data-pid="24">
+                                        贵州省</span>
+                                
+                                    <span data-name="甘肃省" data-pid="28">
+                                        甘肃省</span>
+                                
+                                    <span data-name="澳  门" data-pid="34">
+                                        澳  门</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>H-K</dt>
+                        <dd>
+                            
+                                    <span data-name="河北省" data-pid="3">
+                                        河北省</span>
+                                
+                                    <span data-name="吉林省" data-pid="7">
+                                        吉林省</span>
+                                
+                                    <span data-name="黑龙江" data-pid="8">
+                                        黑龙江</span>
+                                
+                                    <span data-name="江苏省" data-pid="10">
+                                        江苏省</span>
+                                
+                                    <span data-name="江西省" data-pid="14">
+                                        江西省</span>
+                                
+                                    <span data-name="河南省" data-pid="16">
+                                        河南省</span>
+                                
+                                    <span data-name="湖北省" data-pid="17">
+                                        湖北省</span>
+                                
+                                    <span data-name="湖南省" data-pid="18">
+                                        湖南省</span>
+                                
+                                    <span data-name="海南省" data-pid="21">
+                                        海南省</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>L-S</dt>
+                        <dd>
+                            
+                                    <span data-name="山西省" data-pid="4">
+                                        山西省</span>
+                                
+                                    <span data-name="内蒙古" data-pid="5">
+                                        内蒙古</span>
+                                
+                                    <span data-name="辽宁省" data-pid="6">
+                                        辽宁省</span>
+                                
+                                    <span data-name="上海市" data-pid="9">
+                                        上海市</span>
+                                
+                                    <span data-name="山东省" data-pid="15">
+                                        山东省</span>
+                                
+                                    <span data-name="四川省" data-pid="23">
+                                        四川省</span>
+                                
+                                    <span data-name="陕西省" data-pid="27">
+                                        陕西省</span>
+                                
+                                    <span data-name="青海省" data-pid="29">
+                                        青海省</span>
+                                
+                                    <span data-name="宁  夏" data-pid="30">
+                                        宁  夏</span>
+                                
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>T-Z</dt>
+                        <dd>
+                            
+                                    <span data-name="天津市" data-pid="2">
+                                        天津市</span>
+                                
+                                    <span data-name="浙江省" data-pid="11">
+                                        浙江省</span>
+                                
+                                    <span data-name="云南省" data-pid="25">
+                                        云南省</span>
+                                
+                                    <span data-name="西  藏" data-pid="26">
+                                        西  藏</span>
+                                
+                                    <span data-name="新  疆" data-pid="31">
+                                        新  疆</span>
+                                
+                                    <span data-name="台湾省" data-pid="32">
+                                        台湾省</span>
+                                
+                                    <span data-name="香  港" data-pid="33">
+                                        香  港</span>
+                                
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="child-contents" style="display: none;">
+                <div class="inquiry-span" index="2">
+                </div>
+            </div>
+             
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </label>
+                    <label for="">
+                        <p>
+                            货物类型：</p>
+                        <select name="GoodsType" id="GoodsType" style="line-height: 27px; height: 27px; width: 155px;">
+                            <option value="">请选择</option>
+                            
+                            <option value="18">
+                                冷冻食品
+                            </option>
+                            
+                            <option value="19">
+                                冷藏食品
+                            </option>
+                            
+                            <option value="20">
+                                恒温食品
+                            </option>
+                            
+                            <option value="21">
+                                常温食品
+                            </option>
+                            
+                        </select>
+                    </label>
+                    <input type="submit" id="shipinfoSearchBtn" class="btn02" value="查询" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery("#bannerIndex").slide({ mainCell: ".bd ul", autoPlay: true });
+        jQuery(".banner-quotes01").each(function () {
+            $(this).slide({ mainCell: ".bd ul", autoPlay: false });
+        });
+        jQuery(".banner-quotes02").each(function () {
+            $(this).slide({ mainCell: ".bd ul", autoPlay: false });
+        });
+        jQuery(".txtScroll-top").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "top", autoPlay: true, vis: 13 });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('dl#my-accordion').accordion({ open: true });
+
+            $('.inquiry-infor .inquiry-list').css({
+                top: "18px",
+                right: 0,
+                left: 'inherit',
+                borderRadius: 0
+            });
+        });
+    </script>
+    <script type="text/javascript">
+
+        $("nav dt ul").show();
+    </script>
+
+    
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-left">
+                <div class="footer-logo"><img src="images/logo.png" alt=""/></div>
+                <div class="footer-tel">
+                    <h6>服务热线：</h6>
+                    <p>400-881-6229</p>
+                </div>
+            </div>
+            <div class="footer-nav">
+            
+          
+              <dl style="background: url(images/footer-icon01.png) no-repeat top left;">
+                    <dt><a href="gouwuzhinan.html">购物指南</a></dt>
+                    <dd>
+                    
+                     <a href="gouwuliucheng.html">购物流程</a>
+                    
+                     <a href="dinghuofangshi.html">订货方式</a>
+                    
+                     <a href="lianxikefu.html">联系客服</a>
+                    
+                     <a href="jiaoyitiaokuan.html">交易协议</a>
+                    
+                   
+                
+                    </dd>
+                </dl>
+            
+          
+              <dl style="background: url(images/footer-icon02.png) no-repeat top left;">
+                    <dt><a href="zhifufangshi.html">支付方式</a></dt>
+                    <dd>
+                    
+                     <a href="yinxingfukuan.html">银行付款</a>
+                    
+                     <a href="zaixianzhifu.html">在线支付</a>
+                    
+                   
+                
+                    </dd>
+                </dl>
+            
+          
+              <dl style="background: url(images/footer-icon03.png) no-repeat top left;">
+                    <dt><a href="wuliubangzhu.html">物流帮助</a></dt>
+                    <dd>
+                    
+                     <a href="ruhezhaoche.html">如何找车</a>
+                    
+                     <a href="changjianwenti.html">常见问题</a>
+                    
+                     <a href="yunsongliucheng.html">运送流程</a>
+                    
+                   
+                
+                    </dd>
+                </dl>
+            
+          
+              <dl style="background: url(images/footer-icon04.png) no-repeat top left;">
+                    <dt><a href="shouhoufuwu.html">售后服务</a></dt>
+                    <dd>
+                    
+                     <a href="shouhoufuwuzongze.html">售后服务总则</a>
+                    
+                     <a href="fuwuzhengce.html">服务政策</a>
+                    
+                   
+                
+                    </dd>
+                </dl>
+            
+          
+              <dl style="background: url(images/footer-icon05.png) no-repeat top left;">
+                    <dt><a href="helpcenter.html">帮助中心</a></dt>
+                    <dd>
+                    
+                     <a href="wangdianfenbu.html">网点分布</a>
+                    
+                   
+                
+                    </dd>
+                </dl>
+            
+               
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <div class="copy-nav">
+   
+         <a href="/guanyuwomen.html" target="_self" title="关于我们">关于我们</a><span>|</span><a href="/law.html" target="_self" title="法律声明">法律声明</a><span>|</span><a href="/chengpinyingcai.html" target="_self" title="诚聘英才">诚聘英才</a><span>|</span><a href="/lianxiwomen.html" target="_self" title="联系我们">联系我们</a><span>|</span><a href="/youqinglianjie.html" target="_self" title="友情链接">友情链接</a><span>|</span><a href="/wangzhandaohang.html" target="_self" title="网站导航">网站导航</a>
+        </div>
+        <p> Copyright <i class="fa fa-copyright"></i> 百鲜网 粤ICP备15092429号-1</p>
+         <div id="bottomPic">
+              <span class="span1"><a id='___szfw_logo___' href='https://credit.szfw.org/CX20160125013850370188.html' target='_blank'><img src='http://icon.szfw.org/cert.png' border='0' /></a>
+<script type='text/javascript'>    (function () { document.getElementById('___szfw_logo___').oncontextmenu = function () { return false; } })();</script></span>
+                       <span class="span2"> <script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=4d69e3e5-ab0f-4c0b-9a1f-a3f08c1dab57&width=75&height=105&type=1" type="text/javascript" charset="utf-8"></script></span>
+                      
+        </div>
+    </div>
+</footer>
+<style type="text/css">
+   .copy{ height:auto;}
+   #bottomPic{ float:left; width:100%; margin:10px 0; text-align:center;}
+#bottomPic .span2  img{ width:37px; height:50px;}
+#bottomPic .span1  img{ margin-right: 20px;}
+</style>
+      
+     
+
+
+
+    
+    
+           
+    
+      
+	<ul class="right-fixed">
+     <li class="icon01"><a href="user.aspx?action=cart">
+        <em></em>
+        <p>购物车(<span id="FixRightCartCount"></span>)件</p>
+    </a></li>
+    <li class="icon02"><a href="lianxikefu.html">
+        <em></em>
+        <p>在线客服</p>
+    </a></li>
+   
+    <li class="icon04"><a href="lianxikefu.html">
+        <em></em>
+        <p>客服电话</p>
+    </a></li>
+    <li class="returnTop"><a href="javascript:;">
+        <em></em>
+    </a></li>
+</ul>
+  
+</body>
+</html>
